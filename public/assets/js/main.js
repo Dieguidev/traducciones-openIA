@@ -33,8 +33,6 @@ translateButton.addEventListener("click", async () => {
 
     const data = await response.json();
 
-    alert(data.translatedText);
-
     const botMessage = document.createElement("div");
     botMessage.className = "chat__message chat__message--bot";
     botMessage.textContent = data.translatedText;
